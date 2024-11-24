@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./dist",
+    "target": "es2017",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "sourceMap": false,
+  },
+  "include": ["src"],
+  "exclude": ["dist", "build", "**/*.test.*"]
+}
