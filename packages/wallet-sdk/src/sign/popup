@@ -1,0 +1,20 @@
+popup setup sequence:
+1. SDK: opens popup with opener, which is not being used at this popupListenerAdded
+2. Popup: posts PopupListenerAdded
+3. SDK:
+  - first visit: "SelectConnectionType"
+    - ConnectionTypeSelected
+    - RequestWalletLinkUrl => WalletLinkUrl/WalletLinkQrScanned
+  - subsequent visits: web3 requests
+
+
+
+  whatif
+1. SDK: 
+  - first visit: opens popup with a param to pass "SelectConnectionType"
+  - subsequent visits: no change
+2. Popup: posts PopupListenerAdded
+3. Popup:
+  - if param is passed: "SelectConnectionType"
+    - reroute to "SelectConnectionType" page?
+
